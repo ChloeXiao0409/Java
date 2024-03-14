@@ -25,34 +25,31 @@ After this has been entered, the user can enter input in one of three formats:
 
 > exit
 
-These inputs are described in more detail in the next section.
-
 
 **User Interactions**
+<br>
 The program processes three types of commands:
-
 > Check: Determines if a given string of bits contains any naughty bits as per the initial configuration.
-
 > Change: Modifies the state of a bit at a specific index to either naughty or good.
-
 > Exit: Exit the program.
 
 
 **Example Usage**
+<br>
 - Given Initial Configuration String: "01010"
 This indicates that bits at indexes 1 and 3 are initially naughty.
-
+<br>
 - Command 1: check 00100
 Input: The user enters check 00100 in the command line.
 Output: "No Naughty Bits Found"
 Explanation: Since the only 1 in the string is at index 2, which is not marked as naughty in the initial configuration, the program outputs that no naughty bits are found.
-
+<br>
 - Command 2: change 2 naughty
 Input: The user enters change 2 naughty in the command line.
 Action: The program changes the bit at index 2 to naughty.
 Output: "Bit at index 2 marked as Naughty"
 Explanation: The state of the bit at index 2 is now naughty.
-
+<br>
 - Command 3: check 00100 (After the Change Command)
 Input: The user re-enters check 00100 in the command line.
 Output: "Contains Naughty Bits"
@@ -67,35 +64,36 @@ The program then waits for user input in the form of commands.
 - Entering Commands:
 The user enters commands directly into the command line.
 Based on the command type (check or change), the program performs the corresponding action and provides an output.
-
+<br>
 2. Feedback and Interaction:
 After processing a command, the program outputs the result.
 The user can continue to input commands, interacting with the program in real time.
-
+<br>
 3. Deliverables
 BitManager.java: Contains the logic for managing and interacting with the bit sequence. Upon executing this program the application should run.
 
 
 **Example Runs of the Program**
 
-`Welcome to Bitlandia!
-Initial bit configuration: 01010
+`Welcome to Bitlandia!`
+`Initial bit configuration: 01010`
 
-Please enter a command (check <string>, change <index> <state>, or exit):
+`Please enter a command (check <string>, change <index> <state>, or exit):`
 
-> check 00100
-No Naughty Bits Found
+`> check 00100`
+`No Naughty Bits Found`
 
-> change 2 naughty
-Bit at index 2 marked as Naughty
+`> change 2 naughty`
+`Bit at index 2 marked as Naughty`
 
-> check 00100
-Contains Naughty Bits
+`> check 00100`
+`Contains Naughty Bits`
 
-> exit
-Exiting program. Goodbye!`
+`> exit`
+`Exiting program. Goodbye!`
 
 
 
 **Errors**
+<br>
 Your program will need to handle the following errors by printing the corresponding output, followed by a newline. No other errors will be checked.
