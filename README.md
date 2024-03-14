@@ -2,16 +2,19 @@
 ## Bit State Manager
 
 **Preamble**
+<br>
 In the mystical digital realm of Bitlandia, there exists a curious society of bits, each carrying a unique characteristic: they are either "naughty" or "good". For aeons, these bits have lived in harmony, their states unchallenged, drifting through cyberspace in their predefined roles. However, the winds of change have begun to stir in Bitlandia, bringing with them a challenge that could alter the fabric of bit society forever.
 Enter you, a renowned Bit Whisperer, known far and wide for your ability to understand and influence the deepest desires of any bit. The Elders of Bitlandia have summoned you for a task of utmost importance. Your mission, should you choose to accept it, is to create a magical tool, forged in the ancient language of Java, capable of peering into the very essence of bits, identifying their nature as naughty or good, and, if necessary, changing their state to restore balance.
 Armed with your knowledge of Java and guided by the spirits of object-oriented programming, you set out to craft this tool. The Elders provide you with a scroll, an initial map of Bitlandia in the form of a binary string, where 1s are naughty bits, and 0s are good bits. Your tool must be able to interpret this map, receive commands from the inhabitants of Bitlandia, and reveal the nature of any sequence of bits upon inquiry. Furthermore, it should allow you to alter the fate of any bit, turning the naughty into good or vice versa, thus ensuring peace and balance are maintained in Bitlandia.
 
 
 **Overview**
+<br>
 This exercise is about creating a Java program that manages a sequence of bits, identifying them as "naughty" or "good" and allowing the user to interactively check for naughty bits in a string or change the state of any bit at a specified index.
 
 
 **Initial Setup**
+<br>
 The program initialises by reading a single line from standard input (STDIN), consisting of a binary string. In this string, 1 represents a naughty bit, and 0 represents a good bit. For instance, if the string is "00110", it means bits at positions 1 and 2 are naughty. Bits are read from right to left, where the bit on the very right is bit 0.
 
 After this has been entered, the user can enter input in one of three formats:
